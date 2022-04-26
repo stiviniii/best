@@ -17,7 +17,8 @@ const config = {
                 use: ["style-loader", "css-loader", "sass-loader"]
             }
         ]
-    }
+    },
+    watch: true
 }
 
 if (currentTask == "build") {
