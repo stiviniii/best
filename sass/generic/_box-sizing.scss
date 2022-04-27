@@ -1,11 +1,39 @@
-/* Inherit box-sizing to more easily change it's value on a component level.
-@link http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
 *,
-*::before,
-*::after {
-	box-sizing: inherit;
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
 }
 
 html {
 	box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+html {
+    // Define what one 1rem is
+    font-size: 62.5%;
+    @include respond(x-large) {
+        font-size: 70%;
+    }
+    @include respond(large) {
+        font-size: 65%;
+    }
+    @include respond(medium) {
+        font-size: 63%;
+    }
+    @include respond(small) {
+        font-size: 60%;
+    }  
+}
+
+.web-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.wrapper {
+    flex-grow: 1;
 }

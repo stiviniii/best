@@ -21,3 +21,34 @@
 	clear: both;
 	margin: 0 0 1.5em;
 }
+
+.entry-header {
+    padding-top: 0;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 45px;
+
+	&__text {
+		background: hsl(var(--gray-0));
+		margin-right: -12rem;
+		min-width: 35rem;
+		max-width: 60rem;
+		position: relative;
+		z-index: 1;
+		padding: 3rem 3rem;
+		box-shadow: var(--shadow-6);
+
+		.entry-title {
+			margin: 0 0 1.5rem;
+		}
+		.entry-meta {
+			color: hsl(var(--gray-6));
+		}
+	}
+	.post-thumbnail {
+
+		
+	}
+}

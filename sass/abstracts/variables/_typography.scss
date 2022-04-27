@@ -5,3 +5,24 @@ $font__code: monaco, consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
+
+
+
+
+:root {
+    --font-size-0: clamp(1.2rem, 1vw + 0.5rem, 1.6rem);
+    --font-size-1: clamp(1.7rem, 1vw + 1rem, 2rem);
+    --font-size-2: clamp(2rem, 1vw + 1.25rem, 2.4rem);
+    --font-size-3: clamp(2.4rem, 2vw + 1.25rem, 3.6rem);
+
+
+    --font-weight-1: 100;
+    --font-weight-2: 200;
+    --font-weight-3: 300;
+    --font-weight-4: 400;
+    --font-weight-5: 500;
+    --font-weight-6: 600;
+    --font-weight-7: 700;
+    --font-weight-8: 800;
+    --font-weight-9: 900;
+}

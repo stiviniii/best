@@ -3,19 +3,21 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
 	border: 1px solid;
-	border-color: $color__border-button;
+	border-color: hsl(var(--clr-primary));
 	border-radius: 3px;
-	background: $color__background-button;
-	color: rgba(0, 0, 0, 0.8);
+	background-color: hsl(var(--clr-primary));
+	color: hsl(var(--gray-0));
 	line-height: 1;
-	padding: 0.6em 1em 0.4em;
+	padding: 1rem 2rem;
+	cursor: pointer;
+	transition: all .25s ease;
 
 	&:hover {
-		border-color: $color__border-button-hover;
+		background-color: hsla(var(--clr-primary),.9);
 	}
 
 	&:active,
 	&:focus {
-		border-color: $color__border-button-focus;
+		border-color: hsl(var(--clr-primary));
 	}
 }
