@@ -47,7 +47,7 @@
 				<div class="col-lg-1">
 
 				</div>
-				<div class="col-lg-9">
+				<div class="col-lg-8">
 				<?php
 				the_content(
 					sprintf(
@@ -72,8 +72,8 @@
 				);
 				?>
 				</div>
-				<div class="col-lg-9">
-
+				<div class="col-lg-3">
+				<?php get_sidebar(); ?>
 				</div>
 			</div>
 		</div>
@@ -81,6 +81,12 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php best_entry_footer(); ?>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+				<?php best_entry_footer(); ?>
+				</div>
+			</div>
+		</div>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
