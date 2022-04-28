@@ -6,3 +6,24 @@ h5,
 h6 {
 	clear: both;
 }
+
+
+.postgrid-title {
+	margin-bottom: 5rem;
+	text-align: center;
+	margin-top: 10rem;
+	position: relative;
+
+	span {
+		display: inline-block;
+		background: hsl(var(--gray-1));
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	&::after {
+		content: '';
+		border-top: 1px solid hsl(var(--gray-4));
+		display: block;
+		margin-top: -0.66em;
+	}
+}
