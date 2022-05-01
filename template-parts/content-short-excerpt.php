@@ -1,4 +1,4 @@
-<div class="col-lg-4 col-md-6">
+<div class="col-lg-4 col-md-6 mb">
 <article class="postlist-short">
     <div class="entry-image">
     <?php best_post_thumbnail(); ?>

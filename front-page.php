@@ -34,8 +34,8 @@ get_header();
 
                     <?php 
                         $homepagePosts = new WP_Query(array(
-                            'post_type'   => $post_type,
-                            'numberposts' => '5',
+                            'post_type'   => 'post',
+                            'posts_per_page'     => '5',
                             'orderby' => 'publish_date',
                         ));
                         
@@ -60,15 +60,14 @@ get_header();
                     </div>
 
                     <?php 
-                        $shortposts = new WP_Query(array(
-                            'post_type'   => $post_type,
-                            'numberposts' => '5',
-                            'orderby' => 'publish_date',
+                        $homeshortposts = new WP_Query(array(
+                            'post_type'         => 'post',
+                            'posts_per_page'     => '6',
                         ));
                         
                         echo '<div class="row">';
-                        while ($shortposts->have_posts()) {
-                            $shortposts->the_post();
+                        while ($homeshortposts->have_posts()) {
+                            $homeshortposts->the_post();
                             get_template_part( 'template-parts/content', 'short-excerpt' );
                         } 
                         
