@@ -63,17 +63,24 @@ get_header();
                         $homeshortposts = new WP_Query(array(
                             'post_type'         => 'post',
                             'posts_per_page'     => '6',
-                        ));
+                        )); ?>
                         
-                        echo '<div class="row">';
+                        <div 
+                        class="row posts-list"
+                        data-page="<?= get_query_var('paged') ? get_query_var('paged') : 1; ?>"
+                        data-max="<?= $wp_query->max_num_pages; ?>"
+                        >
+                            <?php
                         while ($homeshortposts->have_posts()) {
                             $homeshortposts->the_post();
+                            global $wp_query;
                             get_template_part( 'template-parts/content', 'short-excerpt' );
                         } 
                         
                         wp_reset_postdata();
                         echo '</div>';
                         ?>
+                        <button class="btn btn-primary load-more">Load More Posts</button>
                 </div> <!-- .col -->
             </div>  <!-- .row -->          
         </div><!-- .container -->

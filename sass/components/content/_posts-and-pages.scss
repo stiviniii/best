@@ -2,10 +2,6 @@
 	display: block;
 }
 
-.post,
-.page {
-	margin: 0 0 1.5em;
-}
 
 .updated:not(.published) {
 	display: none;
@@ -48,4 +44,13 @@
 		}
 	}
 	
+}
+
+
+
+.site-footer {
+	background-color: hsl(var(--gray-3));
+	color: hsl(var(--gray-7));
+	padding: 3rem 0;
+	text-align: center;
 }

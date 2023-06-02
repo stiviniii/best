@@ -12,19 +12,20 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'best' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'best' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'best' ), 'best', '<a href="https://steveayo.com/">Steve Ayo</a>' );
-				?>
-		</div><!-- .site-info -->
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="site-info">
+						<span class="copyinfo">Copyright &copy; <?php echo date("Y"); ?></span>
+						<span class="sep"> | </span>							
+						<?php
+						/* translators: 1: Theme name, 2: Theme author. */
+						printf( esc_html__( 'Designed by %1$s.', 'best' ), '<a href="https://steveayo.com/">Steve Ayo</a>' );
+						?>
+					</div><!-- .site-info -->
+				</div>
+			</div>
+		</div>		
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
